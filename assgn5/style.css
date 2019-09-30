@@ -22,12 +22,12 @@ li {
 
 li a {
 	display: inline-block;
-  	color: black;
-  	text-align: center;
-  	padding: 10px 80px;
-  	text-decoration: none;
-  	font-family: 'Roboto', sans-serif;
-  	letter-spacing: 2px;
+  color: black;
+  text-align: center;
+  padding: 10px 80px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
 }
 
 /* Change the link color to #ffd59a (caramel) on hover */
@@ -42,10 +42,10 @@ hr {
 	display: block;
 	size: 0.75px;
 	margin-left: 100px;
-  	margin-right: 100px;
+  margin-right: 100px;
 }
 
-/* -------------- HOME --------------  */
+/* -------------- INDEX --------------  */
 
 .header {
   position: relative;
@@ -79,18 +79,18 @@ hr {
 }
 
 .container {
-  	display: inline;
+  display: inline;
 }
 
 .container div{
 	float: left;
-    clear: none;
+  clear: none;
 }
 
 .container h2 {
-	padding-bottom: 25px;
-  	font-family: 'Roboto', sans-serif;
-  	letter-spacing: 2px;
+  padding-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
 }
 
 .title {
@@ -104,8 +104,8 @@ hr {
 }
 
 .description h3 {
-  	font-family: 'Roboto', sans-serif;
-  	letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
 }
 
 .description p {
@@ -113,26 +113,26 @@ hr {
 	padding-top: 30px;
 	font-size: 16px;
 	line-height: 1.5;
-  	font-family: 'Roboto', sans-serif;
-  	letter-spacing: 0.5px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .button {
 	height: 50px;
 	width: 350px;
 	background-color: black;
-  	border: none;
+  border: none;
  	padding: 15px 100px;
-  	text-align: center;
-  	font-size: 16px;
-  	margin-top: 30px;
-  	border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+  border-radius: 8px;
 }
 
 .button a {
 	color: white;
-  	text-decoration: none;
-  	font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .button:hover {
@@ -145,33 +145,33 @@ hr {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-left: 178px;
-  	font-family: 'Roboto', sans-serif;
-  	letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
 }
 
 .row1 {
 	display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;  
-    align-content: center;
-    margin-left: 100px;
-  	margin-right: 100px;
-  	margin-bottom: 20px;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;  
+  align-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 20px;
 }
 
 .row2 {
 	display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;  
-    align-content: center;
-    margin-left: 100px;
-  	margin-right: 100px;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;  
+  align-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .roll h3{
 	font-family: 'Roboto', sans-serif;
-  	letter-spacing: 1px;
-  	font-size: 16px;
+  letter-spacing: 1px;
+  font-size: 16px;
 	margin-top: 5px;
 	margin-bottom: 0px;
 	text-align: center;
@@ -189,59 +189,59 @@ hr {
 .roll p {
 	color: #797979;
 	margin-top: 0px;
-  	font-family: 'Roboto', sans-serif;
-  	letter-spacing: 0.5px;
-  	font-size: 12px;
-  	text-align: center;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  text-align: center;
 }
 
-/* -------------- ORIGINAL --------------  */
+/* -------------- ORIGINAL & WALNUT --------------  */
 
 .column {
-  	display: grid;
-  	grid-template-columns: 500px 600px;
-    align-content: center;
-    margin-top: 50px;
-    margin-left: 295px;
+  display: grid;
+  grid-template-columns: 500px 600px;
+  align-content: center;
+  margin-top: 50px;
+  margin-left: 295px;
 }
 
 .right {
-    display: grid;
-    grid-template-columns: auto;
-    margin-left: 0px;
+  display: grid;
+  grid-template-columns: auto;
+  margin-left: 0px;
 }
 
 .right h3 {
-    font-family: 'Roboto', sans-serif;
-  	letter-spacing: 1px;
-  	margin-top: 0px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 0px;
 }
 
 .des p {
 	color: #797979;
 	padding-top: 10px;
 	line-height: 1.5;
-  	font-family: 'Roboto', sans-serif;
-  	letter-spacing: 0.5px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .options {
 	display: grid;
-  	grid-template-columns: 150px 400px;
-  	grid-template-rows: 50px 80px 50px;
-  	align-content: left;
+  grid-template-columns: 150px 400px;
+  grid-template-rows: 50px 80px 50px;
+  align-content: left;
 }
 
 .options h4 {
 	font-family: 'Roboto', sans-serif;
-  	letter-spacing: 1px;
-  	margin-top: 15px;
+  letter-spacing: 1px;
+  margin-top: 15px;
 }
 
 .options p {
 	line-height: 1.5;
-  	font-family: 'Roboto', sans-serif;
-  	color: #797979;
+  font-family: 'Roboto', sans-serif;
+  color: #797979;
 }
 
 .options span {
@@ -261,15 +261,15 @@ hr {
 }
 
 .bottom h3 {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 1px;
-    margin-top: 0px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 0px;
 }
 
 .bottom h4 {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 1px;
-    margin-top: 0px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 0px;
 }
 
 .bottom h4 a {
