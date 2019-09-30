@@ -1,27 +1,27 @@
 /* -------------- HEADER --------------  */
 /* Center logo */
 .center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   }
 
 /* Style horizontal nav bar */
 /* https://www.w3schools.com/css/css_navbar.asp */
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 li {
-	display: inline;
+  display: inline;
 }
 
 li a {
-	display: inline-block;
+  display: inline-block;
   color: black;
   text-align: center;
   padding: 10px 80px;
@@ -32,32 +32,35 @@ li a {
 
 /* Change the link color to #ffd59a (caramel) on hover */
 li a:hover {
- 	background-color: #ffd59a;
+   background-color: #ffd59a;
 }
 
 /* Add grey line by styling hr */
 /* https://www.w3schools.com/tags/tag_hr.asp */
 hr {
-	color: grey;
-	display: block;
-	size: 0.75px;
-	margin-left: 100px;
+  color: grey;
+  display: block;
+  size: 0.75px;
+  margin-left: 100px;
   margin-right: 100px;
 }
 
 /* -------------- INDEX --------------  */
 
+/* Make image of header appear as background */
 .header {
   position: relative;
   text-align: center;
 }
 
+/* Layer text on top of image */
 .welcome {
   position: absolute;
   top: 8px;
   left: 325px;
 }
 
+/* Layer text on top of image */
 .intro {
   position: absolute;
   top: 110px;
@@ -78,12 +81,13 @@ hr {
   line-height: 1.5;
 }
 
+/* Display two columns */
 .container {
   display: inline;
 }
 
 .container div{
-	float: left;
+  float: left;
   clear: none;
 }
 
@@ -94,13 +98,13 @@ hr {
 }
 
 .title {
-	padding-top: 50px;
-	padding-right: 90px;
-	padding-left: 292px;
+  padding-top: 50px;
+  padding-right: 90px;
+  padding-left: 292px;
 }
 
 .description {
-	padding-top: 122px;
+  padding-top: 122px;
 }
 
 .description h3 {
@@ -109,20 +113,20 @@ hr {
 }
 
 .description p {
-	color: #797979;
-	padding-top: 30px;
-	font-size: 16px;
-	line-height: 1.5;
+  color: #797979;
+  padding-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.5px;
 }
 
 .button {
-	height: 50px;
-	width: 350px;
-	background-color: black;
+  height: 50px;
+  width: 350px;
+  background-color: black;
   border: none;
- 	padding: 15px 100px;
+  padding: 15px 100px;
   text-align: center;
   font-size: 16px;
   margin-top: 30px;
@@ -130,27 +134,31 @@ hr {
 }
 
 .button a {
-	color: white;
+  color: white;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Change button color when hover */
 .button:hover {
-	background-color: #ffd59a;
+  background-color: #ffd59a;
 }
 
 
 /* -------------- PRODUCTS --------------  */
+
+/* Format title */
 .title2 h2 {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-left: 178px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 178px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 2px;
 }
 
+/* Format first row */
 .row1 {
-	display: grid;
+  display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-evenly;  
   align-content: center;
@@ -159,8 +167,9 @@ hr {
   margin-bottom: 20px;
 }
 
+/* Format second row */
 .row2 {
-	display: grid;
+  display: grid;
   grid-template-columns: auto auto;
   justify-content: space-evenly;  
   align-content: center;
@@ -169,34 +178,37 @@ hr {
 }
 
 .roll h3{
-	font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   font-size: 16px;
-	margin-top: 5px;
-	margin-bottom: 0px;
-	text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 .roll h3 a {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 
+/* Change text color when hover */
 .roll h3 a:hover {
-	color: #ffd59a;
+  color: #ffd59a;
 }
 
 .roll p {
-	color: #797979;
-	margin-top: 0px;
+  color: #797979;
+  margin-top: 0px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.5px;
   font-size: 12px;
   text-align: center;
 }
 
+
 /* -------------- ORIGINAL & WALNUT --------------  */
 
+/* Display as two-column grid */
 .column {
   display: grid;
   grid-template-columns: 500px 600px;
@@ -218,40 +230,42 @@ hr {
 }
 
 .des p {
-	color: #797979;
-	padding-top: 10px;
-	line-height: 1.5;
+  color: #797979;
+  padding-top: 10px;
+  line-height: 1.5;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.5px;
 }
 
+/* Display as 3x2 grid */
 .options {
-	display: grid;
+  display: grid;
   grid-template-columns: 150px 400px;
   grid-template-rows: 50px 80px 50px;
   align-content: left;
 }
 
 .options h4 {
-	font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   margin-top: 15px;
 }
 
 .options p {
-	line-height: 1.5;
+  line-height: 1.5;
   font-family: 'Roboto', sans-serif;
   color: #797979;
 }
 
 .options span {
-	padding-right: 10px;
+  padding-right: 10px;
   padding-left: 10px;
   margin-right: 15px;
 }
 
+/* Style selected option to be black and with box */
 .chosen {
-	color: black;
+  color: black;
   outline: 1px solid black;
 }
 
@@ -277,6 +291,7 @@ hr {
   text-decoration: none;
 }
 
+/* Change text color when hover */
 .bottom h4 a:hover {
   color: #ffd59a;
 }
