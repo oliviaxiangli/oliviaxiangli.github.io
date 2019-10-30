@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Original Roll</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto&display=swap" rel="stylesheet">
+		<script src="main.js"></script>
+	</head>
+
+	<body onload="displayNum()">
+
+		<!-- Header --> 
+		<!-- Same across all pages -->
+		<!-- Logo --> 
+	    <a href="index.html"> 
+	    	<img src="logo.jpg" 
+	    	alt="BUN BUN Logo" style="width:218px;height:90px;" class="center">
+	    </a>
+	    
+		<!-- Nav bar --> 
+	    <ul>
+			<li><a href="index.html">HOME</a></li>
+		    <li><a href="products.html">OUR ROLLS</a></li>
+		    <li><a>ABOUT US</a></li>
+		    <li><a href="cart.html"> <img src="basket.png"
+		  	 style="width:18px;height:18px;"> BASKET</a></li>
+		</ul>
+
+		<p id="num_cart"></p>
+
+		<!-- Grey line --> 
+		<hr>
+		<!-- End of header --> 
+
+		<!-- Content --> 
+		<!-- Separates the page into the top part with two columns --> 
+		<!-- and the bottom part for related products--> 
+		<div class="column">
+
+			<div class="left">
+				 <img src="original.jpg" 
+	    		alt="Original Cinnamon Roll" style="width:400px;height:300px;">
+			</div>
+
+			<div class="right">
+				<div class="des">
+					<h3 id="roll_name">Original Cinnamon Roll</h3>
+					<h3 id="price">$1.5</h3>
+					<p>Our signature original cinnamon roll uses only the finest <br>
+						materials. Well-baked base flavored with cinnamon <br>
+						powder. All organic. Gluten-free available.</p>
+				</div>
+
+				<!-- Grid of three rows and two columns --> 
+				<div class="options">
+
+					<div>
+						<h4>Quantity</h4>
+					</div>
+
+					<div>
+						<p>
+							<span id= "q1" onclick="selectQ(this)" class="chosen">1</span> 
+							<span id= "q2" onclick="selectQ(this)">3</span>
+							<span id= "q3" onclick="selectQ(this)">6</span> 
+							<span id= "q4" onclick="selectQ(this)">12</span>
+						</p>
+					</div>
+			
+					<div>
+						<h4>Glazing</h4>
+					</div>
+
+					<div>
+						<p>
+							<span id= "none" onclick="selectG(this)" class="chosen">None</span> 
+							<span id= "sm" onclick="selectG(this)">Sugar Milk</span><br>
+							<span id= "vm" onclick="selectG(this)">Vanilla Milk</span> 
+							<span id= "dc" onclick="selectG(this)">Double Chocolate</span>
+						</p>
+					</div>
+			
+					<div>
+						<h4>Gluten-Free</h4>
+					</div>
+
+					<div>
+						<p>
+							<span id= "yes" onclick="selectF(this)" class="chosen">Yes</span>
+							<span id= "no" onclick="selectF(this)">No</span>
+						</p>
+					</div>
+
+				</div>
+
+				<button type="button" class="button" onclick="addCart()""><a>ADD TO BASKET</a></button>
+
+			</div>
+		
+		</div>
+
+		<!-- Related products --> 
+		<div class="bottom">
+			<h3>Related Products</h3>
+			<img src="walnut.jpg" 
+	    		alt="Walnut Cinnamon Roll" style="width:200px;height:160px;">
+	    	<h4><a href="walnut.html">Walnut Cinnamon Roll</a></h4>
+		</div>
+
+		<!-- End of content --> 
+
+	</body>
+
+</html>

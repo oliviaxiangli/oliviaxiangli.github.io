@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>OUR ROLLS</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto&display=swap" rel="stylesheet">
+		<script src="main.js"></script>
+	</head>
+
+	<body onload="displayNum()">
+
+		<!-- Header -->
+		<!-- Same across all pages -->
+		<!-- Logo --> 
+	    <a href="index.html"> 
+	    	<img src="logo.jpg" 
+	    	alt="BUN BUN Logo" style="width:218px;height:90px;" class="center">
+	    </a>
+
+	    <!-- Nav bar --> 
+	    <ul>
+			<li><a href="index.html">HOME</a></li>
+		    <li><a href="products.html">OUR ROLLS</a></li>
+		    <li><a>ABOUT US</a></li>
+		    <li><a href="cart.html"> <img src="basket.png"
+		  	 style="width:18px;height:18px;"> BASKET</a></li>
+		</ul>
+
+		<p id="num_cart"></p>
+
+		<!-- Grey line --> 
+		<hr>
+		<!-- End of header --> 
+
+		<!-- Content -->
+		<!-- Page title -->  
+		<div>
+			<h2 class="basket" id="bas">BASKET</h2>
+		</div>
+
+		<div class="cart" id="cart_content">
+			<div class="prod"><h3>Product</h3></div>
+			<div class="quan"><h3>Quantity</h3></div>
+			<div class="glaz"><h3>Glazing</h3></div>
+			<div class="value"><h3>Price</h3></div>
+		</div>
+
+		<div class="sum" id="cart_sum">
+			<div id="cart_price"></div>
+			<div><button type="button" class="button"><a>DELIVERY</a></button></div>
+			<div><button type="button" class="button"><a>STORE PICKUP</a></button></div>
+		</div>
+
+		<!-- End of content -->
+
+	</body>
+
+</html>

@@ -1,0 +1,1 @@
+Despite having a product detail page for both Original and Walnut Cinnamon Roll, quantity and glazing selection and adding to cart function is ONLY implemented for Original Cinnamon Roll. 

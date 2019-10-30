@@ -1,0 +1,416 @@
+/* -------------- HEADER --------------  */
+/* Center logo */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+
+/* Style horizontal nav bar */
+/* https://www.w3schools.com/css/css_navbar.asp */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 10px 80px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Change the link color to #ffd59a (caramel) on hover */
+li a:hover {
+   background-color: #ffd59a;
+}
+
+/* Add grey line by styling hr */
+/* https://www.w3schools.com/tags/tag_hr.asp */
+hr {
+  color: grey;
+  display: block;
+  size: 0.75px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#num_cart {
+  display: none;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  height: 17px;
+  width: 17px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 88px;
+  left: 1130px;
+}
+
+/* -------------- INDEX --------------  */
+
+/* Make image of header appear as background */
+.header {
+  position: relative;
+  text-align: center;
+}
+
+/* Layer text on top of image */
+.welcome {
+  position: absolute;
+  top: 8px;
+  left: 325px;
+}
+
+/* Layer text on top of image */
+.intro {
+  position: absolute;
+  top: 110px;
+  left: 325px;
+}
+
+.header h1 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 48px;
+}
+
+.header h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Display two columns */
+.container {
+  display: inline;
+}
+
+.container div{
+  float: left;
+  clear: none;
+}
+
+.container h2 {
+  padding-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+.title {
+  padding-top: 50px;
+  padding-right: 90px;
+  padding-left: 292px;
+}
+
+.description {
+  padding-top: 122px;
+}
+
+.description h3 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+}
+
+.description p {
+  color: #797979;
+  padding-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.button {
+  height: 50px;
+  width: 350px;
+  background-color: black;
+  border: none;
+  padding: 15px 100px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Change button color when hover */
+.button:hover {
+  background-color: #ffd59a;
+}
+
+
+/* -------------- PRODUCTS --------------  */
+
+/* Format title */
+.title2 h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 178px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Format first row */
+.row1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;  
+  align-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+/* Format second row */
+.row2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;  
+  align-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.roll h3{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.roll h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Change text color when hover */
+.roll h3 a:hover {
+  color: #ffd59a;
+}
+
+.roll p {
+  color: #797979;
+  margin-top: 0px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* -------------- ORIGINAL & WALNUT --------------  */
+
+/* Display as two-column grid */
+.column {
+  display: grid;
+  grid-template-columns: 500px 600px;
+  align-content: center;
+  margin-top: 50px;
+  margin-left: 295px;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: auto;
+  margin-left: 0px;
+}
+
+.right h3 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}
+
+.des p {
+  color: #797979;
+  padding-top: 10px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Display as 3x2 grid */
+.options {
+  display: grid;
+  grid-template-columns: 150px 400px;
+  grid-template-rows: 50px 80px 50px;
+  align-content: left;
+}
+
+.options h4 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+.options p {
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  color: #797979;
+}
+
+.options span {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+/* Style selected option to be black and with box */
+.chosen {
+  color: black;
+  outline: 1px solid black;
+}
+
+.bottom {
+  margin-left: 295px;
+  margin-top: 50px;
+}
+
+.bottom h3 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}
+
+.bottom h4 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}
+
+.bottom h4 a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Change text color when hover */
+.bottom h4 a:hover {
+  color: #ffd59a;
+}
+
+
+/* -------------- CART --------------  */
+
+/* Format title */
+.basket{
+  padding-top: 10px;
+  margin-left: 230px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Create 6-column grid for product info */
+.cart {
+  display: grid;
+  grid-template-columns: 230px 230px 150px 150px 150px 50px;
+  margin-left: 230px;
+  grid-row-gap: 20px;
+}
+
+.prod {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.value {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.cross {
+  padding-top: 20px;
+}
+
+.prod h3 {
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+  font-size: 14px;
+}
+
+.quan h3 {
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+  font-size: 14px;
+}
+
+.glaz h3 {
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+  font-size: 14px;
+}
+
+.value h3 {
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+  font-size: 14px;
+}
+
+.cart p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.edit1 {
+  padding-top: 63px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.edit2 {
+  padding-top: 30px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.gf {
+  font-size: 14px;
+  color: grey;
+}
+
+/* Format sum price and buttons*/
+.sum {
+  margin-left: 840px;
+}
+
+.sum h2{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
