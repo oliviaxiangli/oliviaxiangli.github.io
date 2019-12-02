@@ -1,0 +1,151 @@
+/* CSS File for Mod Four  */
+
+.logoIndex {
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+/******** Font Style ********/
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: white;
+}
+
+a h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: white;
+}
+
+p a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: white;
+}
+
+p a:hover {
+ 	text-decoration: none;
+ 	color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/******** index.html ********/
+
+.titleIndex {
+	margin-top: 10%;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 100px;
+	font-weight: 600;
+}
+
+/******** Container Format ********/
+.steps {
+	margin-top: 200%;
+}
+
+.instruction {
+	margin-top: 7%;
+	margin-bottom: 5%;
+}
+
+#insShape {
+	margin-top: 7%;
+	margin-bottom: 0;
+}
+
+.description {
+	margin-bottom: 5%;
+}
+
+.row2 {
+	margin-top: 10%;
+}
+
+.next {
+	margin-top: 30%;
+}
+
+
+/******** color.html - Four Squares ********/
+.squareO {
+	height: 100px;
+ 	width: 100px;
+  	background-color: #F89D5B;
+}
+
+.squareW {
+	height: 100px;
+ 	width: 100px;
+  	background-color: #F6EEE2;
+}
+
+.squareG {
+	height: 100px;
+ 	width: 100px;
+  	background-color: #E5F6E2;
+}
+
+.squareB {
+	height: 100px;
+ 	width: 100px;
+  	background-color: #8DA1A4;
+}
+
+
+/******** shape.html - Four Shapes ********/
+.shapeS {
+	height: 100px;
+ 	width: 100px;
+  	background-color: white;
+  	opacity: 0.6;
+}
+
+.shapeC {
+	height: 100px;
+ 	width: 100px;
+ 	border-radius: 50%;
+  	background-color: white;
+  	opacity: 0.6;
+}
+
+
+/* Reference: https://css-tricks.com/the-shapes-of-css/ */
+.shapeT {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid white;  
+    opacity: 0.6;
+}
+
+.shapeR {
+	height: 100px;
+ 	width: 70px;
+  	background-color: white;
+  	opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

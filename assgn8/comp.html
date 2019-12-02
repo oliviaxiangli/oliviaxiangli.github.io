@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mod Four</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
+		<script src="main.js"></script>
+		
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+
+	<body onload="displayComp()">
+		
+		<!-- Header --> 
+		<img src="logo.png" alt="Logo" width="70" height="17.5" class = "logoIndex">
+		<!-- End of header --> 
+	  
+
+		<!-- Content --> 
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1 offset-sm-2">
+			        <p class="steps">3/3</p>
+		    	</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-8 offset-sm-2">
+			        <h1 class="instruction">select a composition.</h1>
+		    	</div>
+			</div>
+
+		 	<div class="row">
+		    	<div class="col-sm-2 offset-sm-2" onclick="comp1()">
+			        <h3 id="comp1">Column 1</h3>
+		    	</div>
+			    <div class="col-sm-2" onclick="comp2()">
+			    	<h3 id="comp2">Column 2</h3>
+			    </div>
+			    <div class="col-sm-2" onclick="comp3()">
+			    	<h3 id="comp3">Column 3</h3>    
+			    </div>
+			    <div class="col-sm" onclick="comp4()">
+			    	<h3 id="comp4">Column 4</h3>      
+			    </div>
+		  	</div>
+
+		  	<div class="row">
+				<div class="col-sm-2 offset-sm-2">
+			        <a href="final.html"><h3 id="compNext"></h3></a>
+		    	</div>
+			</div>
+
+		</div>
+
+
+		<!-- End of content --> 
+
+	</body>
+
+</html>
