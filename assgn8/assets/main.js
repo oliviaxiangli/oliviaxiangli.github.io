@@ -1,6 +1,6 @@
 // Javascript file for Mod Four website
 
-/////////////////// Color Page ///////////////////
+///////////////////////////////////// Color Page /////////////////////////////////////
 
 // Function for changing background color
 // and add white border to square
@@ -10,6 +10,9 @@
 function colorO() {
 	document.body.style.background = "#F89D5B";
 	document.getElementById("color1").style.border = "2px solid white";
+	document.getElementById("color2").style.border = "0px";
+	document.getElementById("color3").style.border = "0px";
+	document.getElementById("color4").style.border = "0px";
 	sessionStorage.setItem("color","#F89D5B");
 
 	document.getElementById("colorNext").innerHTML = "next";
@@ -19,6 +22,9 @@ function colorO() {
 function colorW() {
 	document.body.style.background = "#EBDCC6";
 	document.getElementById("color2").style.border = "2px solid white";
+	document.getElementById("color1").style.border = "0px";
+	document.getElementById("color3").style.border = "0px";
+	document.getElementById("color4").style.border = "0px";
 	sessionStorage.setItem("color","#EBDCC6");
 
 	document.getElementById("colorNext").innerHTML = "next";
@@ -28,6 +34,9 @@ function colorW() {
 function colorG() {
 	document.body.style.background = "#C9DDC6";
 	document.getElementById("color3").style.border = "2px solid white";
+	document.getElementById("color1").style.border = "0px";
+	document.getElementById("color2").style.border = "0px";
+	document.getElementById("color4").style.border = "0px";
 	sessionStorage.setItem("color","#C9DDC6");
 
 	document.getElementById("colorNext").innerHTML = "next";
@@ -37,6 +46,9 @@ function colorG() {
 function colorB() {
 	document.body.style.background = "#8DA1A4";
 	document.getElementById("color4").style.border = "2px solid white";
+	document.getElementById("color1").style.border = "0px";
+	document.getElementById("color2").style.border = "0px";
+	document.getElementById("color3").style.border = "0px";
 	sessionStorage.setItem("color","#8DA1A4");
 
 	document.getElementById("colorNext").innerHTML = "next";
@@ -48,9 +60,9 @@ function setColor() {
 	document.body.style.background = backColor;
 }
 
-//////////////// End of Color Page ////////////////
+///////////////////////////////////// End of Color Page /////////////////////////////////////
 
-/////////////////// Shape Page ////////////////////
+//////////////////////////////////////// Shape Page /////////////////////////////////////////
 
 // Variables to track the count for each shape
 var squ;
@@ -65,114 +77,146 @@ var count;
 // and display selected shape
 function shapeS() {
 	// Track count
-	if (squ) {
+	if (squ >= 2) {
+		document.getElementById("shapeNext").innerHTML = "you can only select the same shape twice.";
+	}
+	else {
+		document.getElementById("shapeNext").innerHTML = "";
+		if (squ) {
 		squ = squ +1;
+		}
+		else {
+			squ = 1;
+		}
+
+		if (count) {
+			count = count+1;
+		}
+		else {
+			count = 1;
+		}
+		// Store count
+		sessionStorage.setItem("numS",squ);
+
+		// Display selected shape
+		shape = "square";
+		showSelection(shape, count);
+
+		showNext();
 	}
-	else {
-		squ = 1;
-	}
 
-	if (count) {
-		count = count+1;
-	}
-	else {
-		count = 1;
-	}
-
-	console.log("squ = " + squ);
-	console.log("count = " + count);
-
-	// Store count
-	sessionStorage.setItem("numS",squ);
-
-	// Display selected shape
-	shape = "square";
-	showSelection(shape, count);
-
-	showNext();
+	// This is initially used to test the algorithm
+	//console.log("squ = " + squ); 
+	//console.log("count = " + count);
 }
 
 function shapeC() {
 	// Track count
-	if (cir) {
+	if (cir >= 2) {
+		document.getElementById("shapeNext").innerHTML = "you can only select the same shape twice.";
+	}
+	else {
+		document.getElementById("shapeNext").innerHTML = "";
+		if (cir) {
 		cir = cir+1;
+		}
+		else {
+			cir = 1;
+		}
+
+		if (count) {
+			count = count+1;
+		}
+		else {
+			count = 1;
+		}
+
+		// Store count
+		sessionStorage.setItem("numC",cir);
+
+		// Display selected shape
+		shape = "circle";
+		showSelection(shape, count);
+
+		showNext();
 	}
-	else {
-		cir = 1;
-	}
 
-	if (count) {
-		count = count+1;
-	}
-	else {
-		count = 1;
-	}
-
-	console.log("cir =" + cir);
-	console.log("count = " + count);
-
-	// Store count
-	sessionStorage.setItem("numC",cir);
-
-	// Display selected shape
-	shape = "circle";
-	showSelection(shape, count);
-
-	showNext();
+	// This is initially used to test the algorithm
+	//console.log("cir =" + cir);
+	//console.log("count = " + count);
 }
 
 function shapeT() {
 	// Track count
-	if (tri) {
+	if (tri >= 2) {
+		document.getElementById("shapeNext").innerHTML = "you can only select the same shape twice.";
+	}
+	else {
+		document.getElementById("shapeNext").innerHTML = "";
+		if (tri) {
 		tri = tri+1;
+		}
+		else {
+			tri = 1;
+		}
+
+		if (count) {
+			count = count+1;
+		}
+		else {
+			count = 1;
+		}
+
+		// Store count
+		sessionStorage.setItem("numT",tri);
+
+		// Display selected shape
+		shape = "triangle";
+		showSelection(shape, count);
+
+		showNext();
 	}
-	else {
-		tri = 1;
-	}
 
-	if (count) {
-		count = count+1;
-	}
-	else {
-		count = 1;
-	}
-
-	console.log("tri = " + tri);
-	console.log("count = " + count);
-
-	// Store count
-	sessionStorage.setItem("numT",tri);
-
-	// Display selected shape
-	shape = "triangle";
-	showSelection(shape, count);
-
-	showNext();
+	// This is initially used to test the algorithm
+	//console.log("tri = " + tri);
+	//console.log("count = " + count);
 }
 
 function shapeR() {
 	// Track count
-	if (rec) {
-		rec = rec+1;
+	// Track count
+	if (rec >= 2) {
+		document.getElementById("shapeNext").innerHTML = "you can only select the same shape twice.";
 	}
 	else {
-		rec = 1;
+		document.getElementById("shapeNext").innerHTML = "";
+		if (rec) {
+		rec = rec+1;
+		}
+		else {
+			rec = 1;
+		}
+
+		if (count) {
+			count = count+1;
+		}
+		else {
+			count = 1;
+		}
+
+		// Store count
+		sessionStorage.setItem("numR",rec);
+
+		// Display selected shape
+		shape = "rectangle";
+		showSelection(shape, count);
+
+		showNext();
 	}
 
-	if (count) {count = count+1;}
-	else {count = 1;}
-
-	console.log("rec = " + rec);
-	console.log("count = " + count);
-
-	// Store count
-	sessionStorage.setItem("numR",rec);
-
-	// Display selected shape
-	shape = "rectangle";
-	showSelection(shape, count);
-
-	showNext();
+	// This is initially used to test the algorithm
+	//console.log("rec = " + rec);
+	//console.log("count = " + count);
 }
 
 // Display selected shape in the order of selection
@@ -306,9 +350,9 @@ function showNext() {
 	}
 }	
 
-///////////////// End of Shape Page ///////////////
+////////////////////////////////////// End of Shape Page ////////////////////////////////////
 
-/////////////////// Comp Page ////////////////////
+//////////////////////////////////////// Comp Page /////////////////////////////////////////
 
 // Display the options for composition based on previous selection
 function displayComp() {
@@ -377,18 +421,56 @@ function getSelection() {
 
 	if (numS === 1 && numC === 1 && 
 		numT === 1 && numR === 1) {
-		result = "scrt";
+		result = "sctr";
 	}
 
-	console.log("result = " + result);
+	//console.log("result = " + result);
 	return result;
 }
 
+// Display four compositions based on selected shapes
 function showComp(selection) {
-	//document.getElementById("comp1")
-	//document.getElementById("comp2")
-	//document.getElementById("comp3")
-	//document.getElementById("comp4")
+
+	// Create image element
+	// Name the image element
+	// Set attributes to the image element
+	// Append image element 
+	
+	var cp1 = document.createElement("img");
+	var name1 = "assets/images/comp/" + selection + "1.png";
+	cp1.setAttribute("src", name1);
+	cp1.setAttribute("height", "126");
+	cp1.setAttribute("width", "180");
+	cp1.setAttribute("alt", "Composition 1");
+	cp1.setAttribute("class", "img-fluid");
+	document.getElementById("paint1").appendChild(cp1);
+
+	var cp2 = document.createElement("img");
+	var name2 = "assets/images/comp/" + selection + "2.png";
+	cp2.setAttribute("src", name2);
+	cp2.setAttribute("height", "126");
+	cp2.setAttribute("width", "180");
+	cp2.setAttribute("alt", "Composition 2");
+	cp2.setAttribute("class", "img-fluid");
+	document.getElementById("paint2").appendChild(cp2);
+
+	var cp3 = document.createElement("img");
+	var name3 = "assets/images/comp/" + selection + "3.png";
+	cp3.setAttribute("src", name3);
+	cp3.setAttribute("height", "126");
+	cp3.setAttribute("width", "180");
+	cp3.setAttribute("alt", "Composition 3");
+	cp3.setAttribute("class", "img-fluid");
+	document.getElementById("paint3").appendChild(cp3);
+
+	var cp4 = document.createElement("img");
+	var name4 = "assets/images/comp/" + selection + "4.png";
+	cp4.setAttribute("src", name4);
+	cp4.setAttribute("height", "126");
+	cp4.setAttribute("width", "180");
+	cp4.setAttribute("alt", "Composition 4");
+	cp4.setAttribute("class", "img-fluid");
+	document.getElementById("paint4").appendChild(cp4);
 }
 
 // Functions for tracking selected composition
@@ -399,6 +481,10 @@ function comp1() {
 	sessionStorage.setItem("composition",result+1);
 
 	document.getElementById("compNext").innerHTML = "create";
+	document.getElementById("paint1").style.border = "2px solid white";
+	document.getElementById("paint2").style.border = "0px";
+	document.getElementById("paint3").style.border = "0px";
+	document.getElementById("paint4").style.border = "0px";
 }
 
 function comp2() {
@@ -408,6 +494,10 @@ function comp2() {
 	sessionStorage.setItem("composition",result+2);
 
 	document.getElementById("compNext").innerHTML = "create";
+	document.getElementById("paint2").style.border = "2px solid white";
+	document.getElementById("paint1").style.border = "0px";
+	document.getElementById("paint3").style.border = "0px";
+	document.getElementById("paint4").style.border = "0px";
 }
 
 function comp3() {
@@ -417,6 +507,10 @@ function comp3() {
 	sessionStorage.setItem("composition",result+3);
 
 	document.getElementById("compNext").innerHTML = "create";
+	document.getElementById("paint3").style.border = "2px solid white";
+	document.getElementById("paint1").style.border = "0px";
+	document.getElementById("paint2").style.border = "0px";
+	document.getElementById("paint4").style.border = "0px";
 }
 
 function comp4() {
@@ -426,21 +520,39 @@ function comp4() {
 	sessionStorage.setItem("composition",result+4);
 
 	document.getElementById("compNext").innerHTML = "create";
+	document.getElementById("paint4").style.border = "2px solid white";
+	document.getElementById("paint1").style.border = "0px";
+	document.getElementById("paint2").style.border = "0px";
+	document.getElementById("paint3").style.border = "0px";
 }
 
-///////////////// End of Comp Page ///////////////
+////////////////////////////////////// End of Comp Page ////////////////////////////////////
 
 
-/////////////////// Final Page ////////////////////
+//////////////////////////////////////// Final Page /////////////////////////////////////////
 function displayFinal() {
 
 	setColor();
 
 	var final = sessionStorage.getItem("composition");
 
-	console.log(final);
+	//console.log(final);
 
-	document.getElementById("compFinal").innerHTML = final;
+	//document.getElementById("compFinal").innerHTML = final;
+
+	// Create image element
+	// Name the image element
+	// Set attributes to the image element
+	// Append image element 
+	
+	var cpfinal = document.createElement("img");
+	var namefinal = "assets/images/compfinal/final" + final + ".png";
+	cpfinal.setAttribute("src", namefinal);
+	cpfinal.setAttribute("height", "632");
+	cpfinal.setAttribute("width", "900");
+	cpfinal.setAttribute("alt", "Composition Final");
+	cpfinal.setAttribute("class", "img-fluid");
+	document.getElementById("finalcomp").appendChild(cpfinal);
 }
 
 

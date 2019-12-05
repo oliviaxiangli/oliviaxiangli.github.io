@@ -1,8 +1,8 @@
 /* CSS File for Mod Four  */
 
 .logoIndex {
-	margin-top: 2%;
-	margin-left: 2%;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
 /******** Font Style ********/
@@ -17,10 +17,15 @@ p {
 	color: white;
 }
 
-a h3 {
+h3 a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	color: white;
+}
+
+h3 a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 p a {
@@ -34,10 +39,6 @@ p a:hover {
  	color: white;
 }
 
-a:hover {
-    text-decoration: none;
-}
-
 /******** index.html ********/
 
 .titleIndex {
@@ -46,20 +47,65 @@ a:hover {
 	color: white;
 	font-size: 100px;
 	font-weight: 600;
+	animation: 
+		droptop 0.5s ease-in,
+		fadeintitle 0.5s ease-in;
+}
+
+@keyframes droptop {
+	0% {
+		margin-top: 0%;
+	}
+	100% {
+		margin-top: 10%;
+	}
+}
+
+@keyframes fadeintitle {
+	0% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+.makept {
+	animation: fadein 2s ease-in;
+}
+
+.imgIndex {
+	animation: fadein 2s ease-in;
+	animation-delay: 0s;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0%;
+	}
+	25% {
+		opacity: 0%;
+	}
+	75% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 100%;
+	}
 }
 
 /******** Container Format ********/
 .steps {
-	margin-top: 200%;
+	margin-top: 100px;
 }
 
 .instruction {
-	margin-top: 7%;
+	margin-top: 5%;
 	margin-bottom: 5%;
 }
 
-#insShape {
-	margin-top: 7%;
+.withdes {
+	margin-top: 5%;
 	margin-bottom: 0;
 }
 
@@ -72,7 +118,7 @@ a:hover {
 }
 
 .next {
-	margin-top: 30%;
+	margin-top: 10%;
 }
 
 
@@ -102,7 +148,6 @@ a:hover {
 }
 
 
-/******** shape.html - Four Shapes ********/
 .shapeS {
 	height: 100px;
  	width: 100px;
@@ -137,6 +182,80 @@ a:hover {
 }
 
 
+/******** final.html - Four Squares ********/
+#finalcomp {
+	animation: fadeintitle 1s ease-in;
+}
+
+.textFinal1 {
+	animation: fadeinA 2s ease-in;
+}
+
+@keyframes fadeinA {
+	0% {
+		opacity: 0%;
+	}
+	50% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+.textFinal2 {
+	animation: fadeinB 4s ease-in;
+}
+
+@keyframes fadeinB {
+	0% {
+		opacity: 0%;
+	}
+	50% {
+		opacity: 0%;
+	}
+	75% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+.textFinal3 {
+	animation: fadeinC 4s ease-in;
+}
+
+@keyframes fadeinC {
+	0% {
+		opacity: 0%;
+	}
+	50% {
+		opacity: 0%;
+	}
+	75% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+.textFinal4 {
+	animation: fadeinD 5s ease-in;
+}
+
+@keyframes fadeinD {
+	0% {
+		opacity: 0%;
+	}
+	80% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
 
 
 
